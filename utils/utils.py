@@ -1,6 +1,6 @@
 import torch
 import json
-from transformers import AutoTokenizer, AutoModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForSequenceClassification
 from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score
 from torch.utils.data import Dataset, DataLoader
 from datasets import load_dataset
