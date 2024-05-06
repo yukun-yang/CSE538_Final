@@ -13,7 +13,7 @@ def loadModel(model_name="meta-llama/Llama-2-7b-chat-hf"):
     ### Load model
     ### If BERT, we use AutoModelForSequenceClassification
     if "bert" in model_name:
-        model = AutoModelForSequenceClassification.from_pretrained(model_name, device_map="auto")
+        model = AutoModelForSequenceClassification.from_pretrained(model_name)
     ### Else it is a CausalLM
     else:
         model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
